@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 31029902}
   - component: {fileID: 31029901}
   - component: {fileID: 31029900}
+  - component: {fileID: 31029908}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -188,7 +189,7 @@ MonoBehaviour:
     transformVal: {fileID: 0}
   _toScale:
     vector3Ref: {fileID: 0}
-    vector3Val: {x: 0.089601, y: 0.089601, z: 0.089601}
+    vector3Val: {x: 0.89601, y: 0.89601, z: 0.89601}
   toTransformOLD: {fileID: 0}
   toScaleOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &31029890
@@ -354,7 +355,7 @@ MonoBehaviour:
   scrollPos: {x: -4, y: 4}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 258
+  blockViewHeight: 488
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -362,8 +363,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 31029893}
+  selectedCommands:
+  - {fileID: 31029889}
   variables: []
   description: 
   stepPause: 0
@@ -619,7 +622,7 @@ MonoBehaviour:
     transformVal: {fileID: 0}
   _toScale:
     vector3Ref: {fileID: 0}
-    vector3Val: {x: 0.089601, y: 0.089601, z: 0.089601}
+    vector3Val: {x: 0.8327662, y: 0.8327662, z: 0.8327662}
   toTransformOLD: {fileID: 0}
   toScaleOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &31029905
@@ -703,7 +706,7 @@ MonoBehaviour:
   itemId: 7
   blockName: KEY2
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 31029908}
   commandList:
   - {fileID: 31029906}
   - {fileID: 31029905}
@@ -712,6 +715,22 @@ MonoBehaviour:
   - {fileID: 31029902}
   - {fileID: 31029901}
   suppressAllAutoSelections: 0
+--- !u!114 &31029908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31029888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 31029907}
+  suppressBlockAutoSelect: 0
+  clickableObject: {fileID: 1859083121}
+  waitFrames: 1
 --- !u!1 &44975392
 GameObject:
   m_ObjectHideFlags: 0
